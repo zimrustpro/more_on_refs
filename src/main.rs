@@ -1,6 +1,6 @@
 fn main() {
-    let country = String::from("Zimbabwe");
-    let ref_one = &country;
-    let _ref_two = &country;
-    println!("{}", ref_one);
+    let mut my_number = 8;
+    let num_ref = &mut my_number;
+    *num_ref += 10;
+    println!("{}", my_number);
 }
