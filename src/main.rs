@@ -1,9 +1,9 @@
 fn main() {
-    let country = String::from("Austria");
-    print_country(&country);
-    print_country(&country);
-}
-
-fn print_country(country_name: &String) {
-    println!("{}", country_name);
+    let title = "TODAY'S NEWS";
+    println!("{:-^30}", title);
+    let bar = "|";
+    println!("{: <15}{: >15}", bar, bar);
+    let a = "SEOUL";
+    let b = "TOKYO";
+    println!("{a:-<15}{b:->15}");
 }
